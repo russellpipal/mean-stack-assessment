@@ -13,8 +13,8 @@
     First Name: <input type="text" ng-model="main.hero.firstName" /><br />
     Last Name: <input type="text" ng-model="main.hero.lastName" /><br />
     City: <input type="text" ng-model="main.hero.city" /><br />
-    <select ng-model="main.hero.powerName" ng-options="power for power in main.powerOptions"></select><br />
-    <button ng-click="main.addHero(main.hero)">Add Hero</button>
+    Power: <select ng-model="main.hero.powerName" ng-options="power for power in main.powerOptions"></select><br />
+    <button class="btn" ng-click="main.addHero(main.hero)">Add Hero</button>
 
     <div ng-repeat = "hero in main.heroes" class="well">
       Alias: {{ hero.alias }}<br />
