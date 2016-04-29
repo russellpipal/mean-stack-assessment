@@ -20,7 +20,7 @@ app.controller('MainController', ['$http', function($http){
     $http.post('/hero', hero).then(getHeroes);
   }
 
-  main.deleteHero = function(hero, index){
+  main.deleteHero = function(hero){
     var id = hero._id;
     $http.delete('/hero/' + id).then(getHeroes);
   }
